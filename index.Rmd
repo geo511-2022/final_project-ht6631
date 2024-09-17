@@ -62,7 +62,7 @@ Figure 1 depicts the study area, which comprises eight streets that were selecte
 The study employed the Greater Buffalo Niagara Regional Transit Commission's (GBNRTC) Transportation Data Management System to collect data on traffic flow, pedestrian movement, geographic information at street crossings, and intersection count dates and times for each location along the avenue. The study also collected geographic data on "pedestrian generators," which included restaurants, supermarkets, markets, art galleries, event venues, office and retail complexes, and trees, among others. Other data collected included population makeup, crime statistics by type, traffic accidents, and land use portfolios with reference to Buffalo tax parcels. Shapefiles were used to geocode tabular information on the locations of pedestrian generators. Pedestrian counts were taken at each intersection of the road every 15 minutes, eight hours a day. The designated time slots for the counts were 7am to 10am, 12pm to 2pm, and 3pm to 6pm. Although the data was collected from May to August from 2009 to 2020, few datasets contained information from January, the coldest month in Buffalo. The study utilized pedestrian counts to assess the vibrancy of the streets.
 
 ```{r}
-#This R chunck plots pedestrian distribution at observed time slots
+#This R chunck plots pedestrian distribution at observed time slots 
 data=read_csv('data/CCCCCCDep.csv')
 #Only use useful part
 data=data[,-c(4,7)]
